@@ -1,3 +1,16 @@
+"""
+                            * Project Name: 	Artificial Growth Box
+                            * Author List: 		Rahul Kondamgire, Rushikesh Wani, Sumit Sakarkar, Kalyani More
+                            * Filename: 		Project.py
+                            * Functions: 		UPLOAD()
+                            * Global Variables:	None
+
+"""
+
+
+
+#Include Files 
+
 import Tkinter as tk
 import RPi.GPIO as GPIO
 import time
@@ -16,7 +29,18 @@ window.title("Growth Box")
 window.geometry("600x800")
 
 
-
+"""
+                            /*
+                            *
+                            * Function Name: 	UPLOAD()
+                            * Input: 		None
+                            * Output: 		None
+                            * Logic: 		Take Values from Sensors and display, check is values are OKAY!! and display verification
+                            * Example Call:		UPLOAD()
+                            *
+                            */
+				*
+"""
 def UPDATE():
     Val_Huminity = GPIO.input(14)
     Val_Temp =GPIO.input(15)
@@ -31,6 +55,12 @@ def UPDATE():
     verified.destroy()
     window.update()
     
+    
+    
+    
+# GUI - FRONTEND
+
+
 title = tk.Label(text = "GROWTH BOX",bd = 10,anchor = "center",font = ("Times new roman",15))
 title.place(x=300,y=30,anchor="center")
 
